@@ -1,0 +1,8 @@
+.contacto-container {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin-left: 50px;
+    margin-top: 50px;
+    padding-left: 10px;
+  }

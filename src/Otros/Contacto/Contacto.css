@@ -1,0 +1,52 @@
+.contacto-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  margin-left: 50px;
+  margin-top: 50px;
+  padding-left: 10px;
+}
+
+.contacto-form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.contacto-image {
+  display: flex;
+  flex: 1;
+  margin-left: 10%;
+  margin-bottom: 20px;
+}
+
+/* resolucion para dispositivos muy pequeños*/
+@media(max-width: 575px){
+  .contacto-image{
+    max-height: 400px;
+    display: flex;
+  }
+  .contacto-container{
+    display: inline-block;
+  }
+}
+/* resolucion para dispositivos pequeños*/
+@media(max-width: 576px){
+  .contacto-container{
+    display: inline-block;
+  }
+}
+/* resolucion para tablets*/
+@media(max-width: 768px){
+  .contacto-container{
+    display: inline-block;
+  }
+}
+/* resolucion para pc de escritorio*/
+@media(max-width: 992px){
+  .contacto-container{
+    display: inline-block;
+  }
+}

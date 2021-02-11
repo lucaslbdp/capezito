@@ -1,0 +1,35 @@
+.gris {
+  background-color: rgba(0, 0, 0, 0.199);
+}
+.botonEnviarMail:disabled {
+  opacity: 0.5;
+  background-color: black;
+}
+
+.item{
+  margin: 0.6em;
+  padding: 0.3em;
+  float: left;
+}
+
+.articlesCard{
+  display: flex;
+  flex-direction: row;
+}
+
+/* resolucion para dispositivos muy pequeños*/
+@media(max-width: 575px){
+
+}
+/* resolucion para dispositivos pequeños*/
+@media(max-width: 576px){
+
+}
+/* resolucion para tablets*/
+@media(max-width: 768px){
+
+}
+/* resolucion para pc de escritorio*/
+@media(max-width: 992px){
+
+}
