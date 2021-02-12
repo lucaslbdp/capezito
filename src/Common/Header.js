@@ -7,6 +7,7 @@ import logoHead from "../img/logoHead.png";
 import facebookIcon from "../img/facebookIcon.png";
 import instagramIcon from "../img/instagramIcon.png";
 import whatsappIcon from "../img/whatsappIcon.png";
+import "../App.css";
 
 class NavbarPage extends Component {
 state = {
@@ -20,12 +21,12 @@ toggleCollapse = () => {
 render() {
   return (
     <Router>
-      <MDBNavbar color="grey lighten-3" dark expand="md" className="fixed-top" scrolling transparent>
-        <MDBNavbarBrand href="/" className="pt-0 ml-5 pl-5"><img src={logoHead} alt="logo empresa"></img>
+      <MDBNavbar color="grey lighten-3" light expand="md" className="fixed-top" scrolling transparent>
+        <MDBNavbarBrand href="/" className="pt-0 img-header"><img src={logoHead} alt="logo empresa"></img>
         </MDBNavbarBrand>
-        <MDBNavbarToggler  onClick={this.toggleCollapse}  dark expand="md"/>
+        <MDBNavbarToggler onClick={this.toggleCollapse} dark expand="md"/>
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
-          <div className="ml-auto mr-5">
+          <div className="ml-auto mr-5 ">
         <a style={{ color: "black" }}
                         target="_blank noreferrer"
                         href="https://www.instagram.com/capezcomunicacion/"

@@ -1,0 +1,27 @@
+.jumbo-container{
+
+}
+
+@media(max-width: 575px){
+    .jumbo-container{
+        max-width: 100%;
+        font-size: 10px;
+    }
+}
+/* resolucion para dispositivos pequeños*/
+@media(max-width: 576px){
+    .jumbo-container{
+        max-width: 100%;
+    }
+}
+/* resolucion para tablets*/
+@media(max-width: 768px){
+    .jumbo-container{
+        max-width: 100%;
+        font-size: 10px;
+    }
+}
+/* resolucion para pc de escritorio*/
+@media(max-width: 992px){
+
+}

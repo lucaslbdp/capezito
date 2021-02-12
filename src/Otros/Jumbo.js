@@ -2,11 +2,12 @@ import React from "react";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import "../App.css";
 import capezGris from "../img/capezGris.png";
+import "./Jumbo.css";
 
 const Jumbo = () => {
   return (
     <Jumbotron
-      className="mt-5 text-center shadow-sm mb-0 pt-0 col-sm-12"
+      className="mt-5 text-center shadow-sm mb-0 pt-0 col-sm-12 jumbo-container"
       style={{ backgroundImage: "url(./back.png)", width: "100%" }}
     >
       <img src={capezGris} className="pb-0 mb-0" alt="logo capez"></img>

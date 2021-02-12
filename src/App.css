@@ -32,19 +32,32 @@ footer{
   margin-left: 3%;
 }
 
+.img-header{
+  display: flex;
+  margin-left: 6%;
+}
+
 /* resolucion para dispositivos muy pequeños*/
 @media(max-width: 575px){
-
+  .img-header{
+    max-width: 10%;
+    padding-left: 0cm;
+  }
 }
+
 /* resolucion para dispositivos pequeños*/
 @media(max-width: 576px){
+  .img-header{
+    max-width: 10%;
+  }
 
 }
 /* resolucion para tablets*/
 @media(max-width: 768px){
-
+  .img-header{
+    max-width: 20%;
+  }
 }
 /* resolucion para pc de escritorio*/
 @media(max-width: 992px){
-
 }

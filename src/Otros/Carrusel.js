@@ -1,11 +1,11 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
-import slider1 from "../img/slider1.png";
+import slider2 from "../img/slider2.png";
 import "./Carrusel.css";
 
 const Nosotros = () => {
-  const images = [slider1, slider1, slider1];
+  const images = [slider2, slider2, slider2];
 
   const carouselItem = () => {
     return images.map((image) => {
