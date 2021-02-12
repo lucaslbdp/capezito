@@ -1,5 +1,6 @@
 import React from "react";
 import ayudarte from "../img/ayudarte.png";
+import "./Articles.css";
 
 const PodemosAyudarte = () => {
   return (
@@ -20,7 +21,7 @@ const PodemosAyudarte = () => {
         <img
           src={ayudarte}
           alt="img ayudar"
-          width="10%"
+          width="150px"
           className="mt-5 pt-5"
         />
         <h1

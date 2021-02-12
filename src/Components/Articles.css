@@ -12,6 +12,9 @@
         display: flex;
         flex-direction: column;   
     }
+    .img-ayudar{
+        max-width: 80%;
+    }
 }
 /* resolucion para dispositivos pequeños*/
 @media(max-width: 576px){
@@ -20,6 +23,9 @@
         display: flex;
         flex-direction: column;   
     }
+    .img-ayudar{
+        max-width: 80%;
+    }
 }
 /* resolucion para tablets*/
 @media(max-width: 768px){
@@ -27,6 +33,9 @@
         max-width: 100%;
         display: flex;
         flex-direction: column;   
+    }
+    .img-ayudar{
+        max-width: 80%;
     }
 }
 /* resolucion para pc de escritorio*/
