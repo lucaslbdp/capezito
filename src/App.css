@@ -17,6 +17,21 @@
   flex-direction: row;
 }
 
+footer{
+  margin-top: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.boton-footer{
+  margin-top: 70px;
+}
+
+.logo-footer{
+  margin-right: 13%;
+  margin-left: 3%;
+}
+
 /* resolucion para dispositivos muy pequeños*/
 @media(max-width: 575px){
 

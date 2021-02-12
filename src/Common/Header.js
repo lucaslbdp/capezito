@@ -23,7 +23,7 @@ render() {
       <MDBNavbar color="grey lighten-3" dark expand="md" className="fixed-top" scrolling transparent>
         <MDBNavbarBrand href="/" className="pt-0 ml-5 pl-5"><img src={logoHead} alt="logo empresa"></img>
         </MDBNavbarBrand>
-        <MDBNavbarToggler  onClick={this.toggleCollapse}/>
+        <MDBNavbarToggler  onClick={this.toggleCollapse}  dark expand="md"/>
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
           <div className="ml-auto mr-5">
         <a style={{ color: "black" }}

@@ -6,9 +6,9 @@ import {
 } from "mdbreact";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
-import imgBody from "../../img/imgBody.png";
-
+import imgBody from "../img/imgBody.png";
 import "./Contacto.css";
+
 
 const Contacto = () => {
   const [state, setState] = useState({
@@ -55,7 +55,7 @@ const Contacto = () => {
   return (
     <div className="contacto-container">
       <div className="contacto-form">
-        <form onSubmit={enviarFormulario}>
+        <form onSubmit={enviarFormulario} style={{}}>
           <p className="h5 text-center mb-4">
             Hacé tu consulta ¡Estamos para ayudarte!
           </p>
@@ -124,8 +124,8 @@ const Contacto = () => {
           </div>
         </form>
       </div>
-      <div className="contacto-image">
-        <img src={imgBody} alt="img" style={{maxWidth:"500px"}}/>
+      <div className="col-sm-12 col-md-6 contacto-image">
+        <img src={imgBody} alt="body img" style={{maxWidth:"100%"}}></img>
       </div>
     </div>
   );

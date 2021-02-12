@@ -1,8 +1,39 @@
-.contacto-container {
+.article-container{
     display: flex;
-    flex-direction: row;
-    flex: 1;
-    margin-left: 50px;
-    margin-top: 50px;
-    padding-left: 10px;
-  }
+    background-color: #e4e4e4;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+/* resolucion para dispositivos muy pequeños*/
+@media(max-width: 575px){
+    .article-container{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;   
+    }
+}
+/* resolucion para dispositivos pequeños*/
+@media(max-width: 576px){
+    .article-container{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;   
+    }
+}
+/* resolucion para tablets*/
+@media(max-width: 768px){
+    .article-container{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;   
+    }
+}
+/* resolucion para pc de escritorio*/
+@media(max-width: 992px){
+    .article-container{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;   
+    }
+}
