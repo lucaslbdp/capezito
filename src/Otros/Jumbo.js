@@ -7,7 +7,7 @@ import "./Jumbo.css";
 const Jumbo = () => {
   return (
     <Jumbotron
-      className="mt-5 text-center shadow-sm mb-0 pt-0 col-sm-12 jumbo-container"
+      className="mt-5 text-center shadow-sm mb-0 pt-0 col-sm-12"
       style={{ backgroundImage: "url(./back.png)", width: "100%" }}
     >
       <img src={capezGris} className="pb-0 mb-0" alt="logo capez"></img>
