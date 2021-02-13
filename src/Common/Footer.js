@@ -26,8 +26,9 @@ const Footer = () => {
               href="https://api.whatsapp.com/send?phone=+5493815516016"
             >
               <img src={contactar} style={{maxWidth:"300px"}} alt="img contactar"></img></a>
-            <div className="ml-2">
+            <div className="ml-4">
               <p className="mt-3" style={{fontSize:"18px"}}>Seguinos en nuestras redes:</p>
+              <div className="ml-5 pl-4">
               <a
                 target="_blank noreferrer"
                 href="https://www.facebook.com/capezcomunicacion"
@@ -43,7 +44,7 @@ const Footer = () => {
                 href="https://api.whatsapp.com/send?phone=+5493815516016"
               >
               <img src={whatsappIcon} alt="icono wp" style={{maxWidth:"40px"}} className="ml-2"></img></a>
-            </div>
+            </div></div>
           </div></div>
           </Row>
           </Container>
