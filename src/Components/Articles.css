@@ -4,6 +4,9 @@
     padding-top: 50px;
     padding-bottom: 60px;
 }
+.gris{
+
+}
 
 /* resolucion para dispositivos muy pequeños*/
 @media(max-width: 575px){
@@ -44,5 +47,9 @@
         max-width: 100%;
         display: flex;
         flex-direction: column;   
+    }
+    .gris{
+        display: flex;
+        justify-content: space-around;
     }
 }
