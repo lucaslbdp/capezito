@@ -8,7 +8,7 @@ import { MDBAnimation } from "mdbreact";
 const Articles = () => {
     return (
 
-            <div className="article-container text-center">
+            <div className="article-container text-center gris">
                 <div className="col-sm-12 col-md-12 col-lg-4">
                 <MDBAnimation reveal type="slideInLeft" duration="2s">
                 <img src={chatbot} alt="img chatbot" width="35%"></img></MDBAnimation>

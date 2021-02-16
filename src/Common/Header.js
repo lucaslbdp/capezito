@@ -26,18 +26,18 @@ render() {
         <MDBAnimation type="zoomIn"><img src={logoHead} alt="logo empresa"></img></MDBAnimation>
         </MDBNavbarBrand>
         <MDBNavbarToggler onClick={this.toggleCollapse} dark expand="md"/>
-        <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
-          <div className="ml-auto mr-5 ">
+        <MDBCollapse id="navbarCollapse1" className="redesHeader" isOpen={this.state.isOpen} navbar>
+          <div className="ml-auto mr-5">
         <a style={{ color: "black" }}
                         target="_blank noreferrer"
                         href="https://www.instagram.com/capezcomunicacion/"
                     >
-                        <img src={instagramIcon} alt="icono ig" className="mr-2" style={{ maxWidth: "40px" }}></img></a>
+                        <img src={instagramIcon} alt="icono ig" className="mr-3" style={{ maxWidth: "40px" }}></img></a>
                     <a style={{ color: "black" }}
                         target="_blank noreferrer"
                         href="https://api.whatsapp.com/send?phone=+5493815516016"
                     >
-                        <img src={whatsappIcon} alt="icono wp" style={{ maxWidth: "40px" }} className="mr-2"></img></a>
+                        <img src={whatsappIcon} alt="icono wp" style={{ maxWidth: "40px" }} className="mr-3"></img></a>
                     <a style={{ color: "black" }}
                         target="_blank noreferrer"
                         href="https://www.facebook.com/capezcomunicacion"

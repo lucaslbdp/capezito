@@ -37,36 +37,13 @@ footer{
   margin-left: 6%;
 }
 
-.slide-in{
-  animation: slideMe .5s ease-in;
+.redesHeader{
+  display: flex;  
+  height: 23px;
+  padding-bottom: 15px;
+  padding-top: 10px;
 }
 
-@keyframes slideMe{
-  0%{
-transform: skewX(53deg) translateX(-500px);
-opacity: 0;
-  }
-  60%{
-    transform: translateX(0px);
-  }
-  62%{
-    transform: skewX(0deg) translateX(30px);
-  }
-  70%{
-    transform: skew(-20deg);
-    opacity: 1;
-  }
-  80%{
-    transform: skew(0deg) translate(0);
-  }
-  90%{
-    transform: skew(-5deg);
-  }
-100%{
-  transform: skew(0deg)
-}
-
-}
 
 
 
