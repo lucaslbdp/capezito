@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {
-MDBNavbar, MDBNavbarBrand, MDBNavbarToggler, MDBCollapse,
+MDBNavbar, MDBNavbarBrand, MDBNavbarToggler, MDBCollapse, MDBAnimation
 } from "mdbreact";
 import { BrowserRouter as Router } from 'react-router-dom';
 import logoHead from "../img/logoHead.png";
@@ -22,7 +22,8 @@ render() {
   return (
     <Router>
       <MDBNavbar color="grey lighten-3" light expand="md" className="fixed-top pl-0 pr-0" scrolling transparent>
-        <MDBNavbarBrand href="/" className="pt-0 img-header"><img src={logoHead} alt="logo empresa"></img>
+        <MDBNavbarBrand href="/" className="pt-0 img-header">
+        <MDBAnimation type="zoomIn"><img src={logoHead} alt="logo empresa"></img></MDBAnimation>
         </MDBNavbarBrand>
         <MDBNavbarToggler onClick={this.toggleCollapse} dark expand="md"/>
         <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>

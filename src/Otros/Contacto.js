@@ -54,7 +54,7 @@ const Contacto = () => {
 
   return (
     <div className="contacto-container">
-      <div className="contacto-form  slide-in">
+      <div className="contacto-form">
         <form onSubmit={enviarFormulario} style={{}}>
           <p className="h5 text-center mb-4">
             Hacé tu consulta ¡Estamos para ayudarte!
