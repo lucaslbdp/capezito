@@ -4,6 +4,9 @@ import "../App.css";
 import capezGris from "../img/capezGris.png";
 import "./Jumbo.css";
 
+
+
+
 const Jumbo = () => {
   return (
     <Jumbotron

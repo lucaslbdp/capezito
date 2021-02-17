@@ -23,7 +23,7 @@ render() {
     <Router>
       <MDBNavbar color="grey lighten-3" light expand="md" className="fixed-top pl-0 pr-0" scrolling transparent>
         <MDBNavbarBrand href="/" className="pt-0 img-header">
-        <MDBAnimation type="zoomIn"><img src={logoHead} alt="logo empresa"></img></MDBAnimation>
+        <MDBAnimation type="flipInX" infinite duration="3s" delay="1s"><img src={logoHead} alt="logo empresa"></img></MDBAnimation>
         </MDBNavbarBrand>
         <MDBNavbarToggler onClick={this.toggleCollapse} dark expand="md"/>
         <MDBCollapse id="navbarCollapse1" className="redesHeader" isOpen={this.state.isOpen} navbar>
