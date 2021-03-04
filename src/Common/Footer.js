@@ -19,31 +19,31 @@ const Footer = () => {
             <p>Diseñado por Guillou Brands</p>
             <p>Desarrollado por Lucas Barrionuevo</p>
           </div>
-          <div className="col-sm-12 col-md-6 col-lg-4 ml-auto boton-footer">
-          <div className=" ">
+          <div className="col-sm-12 col-md-6 col-lg-4 ml-auto">
+          <div className="">
             <a style={{ color: "black" }}
               target="_blank noreferrer"
               href="https://api.whatsapp.com/send?phone=+5493815516016"
             >
-              <img src={contactar} style={{maxWidth:"300px"}} alt="img contactar"></img></a>
-            <div className="ml-4">
-              <p className="mt-3" style={{fontSize:"18px"}}>Seguinos en nuestras redes:</p>
-              <div className="ml-5 pl-4">
+              <img src={contactar} alt="img contactar" className="boton-footer"></img></a>
+            <div className="ml-4 red-footer">
+              <p className="mt-3 parrafo-seguinos">Seguinos en nuestras redes:</p>
+              <div className="seguinos-footer">
               <a
                 target="_blank noreferrer"
                 href="https://www.facebook.com/capezcomunicacion"
               >
-              <img src={facebookIcon} alt="icono fb" style={{maxWidth:"40px"}} className="ml-5"></img></a>
+              <img src={facebookIcon} alt="icono fb"className="ml-5 icono-footer"></img></a>
               <a
                 target="_blank noreferrer"
                 href="https://www.instagram.com/capezcomunicacion/"
               >
-              <img src={instagramIcon} alt="icono ig" style={{maxWidth:"40px"}} className="ml-2"></img></a>
+              <img src={instagramIcon} alt="icono ig" className="ml-2 icono-footer"></img></a>
               <a style={{ color: "black" }}
                 target="_blank noreferrer"
                 href="https://api.whatsapp.com/send?phone=+5493815516016"
               >
-              <img src={whatsappIcon} alt="icono wp" style={{maxWidth:"40px"}} className="ml-2"></img></a>
+              <img src={whatsappIcon} alt="icono wp" className="ml-2 icono-footer"></img></a>
             </div></div>
           </div></div>
           </Row>

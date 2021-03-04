@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import {
   MDBBtn,
   MDBIcon,
-  MDBInput, MDBAnimation
+  MDBInput,
 } from "mdbreact";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";

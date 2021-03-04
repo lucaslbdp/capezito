@@ -15,17 +15,11 @@ const Jumbo = () => {
     >
       <img src={capezGris} className="pb-0 mb-0" alt="logo capez"></img>
       <h2
-        style={{
-          textTransform: "initial",
-          letterSpacing: "0cm",
-          fontSize: "45px",
-          color: "white",
-        }}
-        className="mb-3"
+        className="mb-3 jumbo-titulo"
       >
         <strong>Nosotros</strong>
       </h2>
-      <p style={{ fontSize: "22px", color: "white" }} className="mb-4">
+      <p style={{color: "white" }} className="mb-4 jumbo-parrafo">
         Somos una empresa tucumana que llega para brindar la mejor calidad{" "}
         <br></br>en comunicación a través de un servicio automático y
         personalizado a la vez,<br></br> dejando resultados reales y eficaces.

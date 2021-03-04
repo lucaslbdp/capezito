@@ -1,12 +1,11 @@
 import React from "react";
 import ayudarte from "../img/ayudarte.png";
-import "./Articles.css";
+import "./Ayuda.css";
 
 const PodemosAyudarte = () => {
   return (
     <div
       className="podemosAyudarteContainer"
-      style={{ display: "flex", flexDirection: "column" }}
     >
       <div
         className="podemosAyudarteTitle"
@@ -21,16 +20,9 @@ const PodemosAyudarte = () => {
         <img
           src={ayudarte}
           alt="img ayudar"
-          width="150px"
-          className="mt-5 pt-5"
+          className="ayuda-img"
         />
-        <h1
-          style={{
-            textTransform: "initial",
-            letterSpacing: "0cm",
-            color: "#818181",
-            fontSize: "40px",
-          }}
+        <h1 className="titulo"
         >
           <strong>¿Cómo podemos ayudarte?</strong>
         </h1>
@@ -46,12 +38,7 @@ const PodemosAyudarte = () => {
         }}
       >
         <h3
-          style={{
-            textTransform: "initial",
-            color: "#9a9a9a",
-            letterSpacing: "0cm",
-          }}
-          className="pb-5"
+          className="pb-5 parrafo"
         >
           Tenemos los servicios de comunicación <br></br>que tu empresa necesita
         </h3>

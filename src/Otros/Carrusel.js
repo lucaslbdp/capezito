@@ -26,8 +26,9 @@ const Nosotros = () => {
   return (
     <Container>
       <Row>
-        <div className="pt-5 mt-5">
-          <Carousel className="pt-5">{carouselItem()}</Carousel>
+        <div id="section1"></div>
+        <div>
+          <Carousel>{carouselItem()}</Carousel>
         </div></Row></Container>
   );
 };

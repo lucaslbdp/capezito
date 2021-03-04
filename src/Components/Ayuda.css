@@ -1,0 +1,45 @@
+.ayuda-img {
+  max-width: 150px;
+  margin-top: 60px;
+  padding-top: 15px;
+}
+
+.titulo {
+  text-transform: initial;
+  letter-spacing: 0cm;
+  color: #818181;
+  font-size: 47px;
+}
+
+.parrafo {
+  letter-spacing: 0cm;
+  text-transform: initial;
+  color: #9a9a9a;
+  font-size: 28px;
+}
+
+
+
+@media (max-width: 678px) {
+  .ayuda-img {
+    max-width: 25px;
+  }
+  .titulo {
+    font-size: 38px;
+  }
+  .parrafo {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ayuda-img {
+    max-width: 135px;
+  }
+  .titulo {
+    font-size: 43px;
+  }
+  .parrafo {
+    font-size: 24px;
+  }
+}

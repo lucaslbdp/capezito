@@ -3,7 +3,7 @@
   flex-direction: row;
   flex: 1;
   margin-left: 50px;
-  margin-top: 50px;
+  margin-top: 30px;
   padding-left: 10px;
   justify-content: space-around;
 }
@@ -23,7 +23,22 @@
   margin-right: 40px;
 }
 
-/* resolucion para dispositivos muy pequeños*/
+
+@media(max-width: 380px){
+  .contacto-constainer{
+    margin-right: 100px;
+  }
+}
+
+
+@media(max-width: 574px){
+  .contacto-image{
+    max-width: 70%;
+    margin-right: 100px;
+  }
+}
+
+
 @media (max-width: 575px) {
   .contacto-form {
     max-width: 80%;

@@ -4,8 +4,9 @@
     padding-top: 50px;
     padding-bottom: 60px;
 }
-.gris{
 
+.imgs-chat{
+    width: 35%;
 }
 
 /* resolucion para dispositivos muy pequeños*/
@@ -15,8 +16,8 @@
         display: flex;
         flex-direction: column;   
     }
-    .img-ayudar{
-        max-width: 80%;
+    .imgs-chat{
+        width: 30%;
     }
 }
 /* resolucion para dispositivos pequeños*/
@@ -26,8 +27,8 @@
         display: flex;
         flex-direction: column;   
     }
-    .img-ayudar{
-        max-width: 80%;
+    .imgs-chat{
+        width: 30%;
     }
 }
 /* resolucion para tablets*/
@@ -37,8 +38,8 @@
         display: flex;
         flex-direction: column;   
     }
-    .img-ayudar{
-        max-width: 80%;
+    .imgs-chat{
+        width: 30%;
     }
 }
 /* resolucion para pc de escritorio*/
@@ -51,5 +52,8 @@
     .gris{
         display: flex;
         justify-content: space-around;
+    }
+    .imgs-chat{
+        width: 25%;
     }
 }

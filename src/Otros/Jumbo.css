@@ -1,24 +1,32 @@
-.jumbo-container{
-    
+.jumbo-parrafo{
+    font-size: 22px;
+}
+.jumbo-titulo{
+    font-size: 45px;
+    text-transform: initial;
+    letter-spacing: 0cm;
+    color: white;
 }
 
 @media(max-width: 575px){
     .jumbo-container{
         max-width: 100%;
-        font-size: 10px;
+    }
+    .jumbo-parrafo{
+        font-size: 18px;
+    }
+    .jumbo-titulo{
+        font-size: 40px;
     }
 }
 /* resolucion para dispositivos pequeños*/
-@media(max-width: 576px){
-    .jumbo-container{
-        max-width: 100%;
-    }
-}
 /* resolucion para tablets*/
 @media(max-width: 768px){
     .jumbo-container{
         max-width: 100%;
-        font-size: 10px;
+    }
+    .jumbo-parrafo{
+        font-size: 20px;
     }
 }
 /* resolucion para pc de escritorio*/
