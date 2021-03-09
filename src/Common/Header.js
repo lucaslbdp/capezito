@@ -12,6 +12,8 @@ import { Link } from "react-scroll";
 
 
 class Header extends Component {
+
+
   state = {
     isOpen: false
   };
@@ -23,10 +25,10 @@ class Header extends Component {
   render() {
     return (
       <Router>
-        <MDBNavbar color="grey lighten-4" light expand="md" className="pb-2 pt-2 sticky-top" scrolling transparent>
+        <MDBNavbar color="grey lighten-4" light expand="md" className="pb-0 pt-0 sticky-top" scrolling>
           <div className="container">
-            <MDBNavbarBrand className="black-text">
-              <MDBNavLink to="/">
+            <MDBNavbarBrand className="black-text mr-0">
+              <MDBNavLink to="/" className="pl-0 pr-0 img-header">
               <MDBAnimation type="slideInLeft">
               <Link
                       activeClass="active"
@@ -38,12 +40,10 @@ class Header extends Component {
               >
                 <img src={logoHead} alt="logo" className="img-header"></img></Link></MDBAnimation></MDBNavLink>
             </MDBNavbarBrand >
-            <MDBNavbarToggler onClick={this.toggleCollapse} className="header-no" />
-            <MDBCollapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
               <MDBNavbarNav right>
 
                 <div className="redes-container pb-2 header-no">
-                  <ul style={{ paddingLeft: "110" }}>
+                  <ul className="pl-0">
                     <li>  <a
                       target="_blank noreferrer"
                       href="https://www.instagram.com/capezcomunicacion/"
@@ -61,7 +61,6 @@ class Header extends Component {
                       <img src={facebookIcon} alt="fb" className="icono-header"></img></a></li>
                   </ul>   </div>
               </MDBNavbarNav>
-            </MDBCollapse>
           </div>
         </MDBNavbar>
       </Router>
