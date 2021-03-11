@@ -1,35 +1,19 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
-import Carousel from "react-bootstrap/Carousel";
-import slider2 from "../img/slider2.png";
 import "./Carrusel.css";
+import ReactPlayer from 'react-player';
 
 const Nosotros = () => {
-  const images = [slider2, slider2, slider2];
-
-  const carouselItem = () => {
-    return images.map((image) => {
-      return (
-        <Carousel.Item interval={4000}>
-          <img
-            className="d-block w-80"
-            src={image}
-            alt="First slide"
-            width="100%"
-          />
-        </Carousel.Item>
-
-      );
-    });
-  };
 
   return (
     <Container>
       <Row>
-        <div id="section1"></div>
-        <div>
-          <Carousel>{carouselItem()}</Carousel>
-        </div></Row></Container>
+        <div id="section1" style={{ width: "100%", height: "100%"}}>
+          <ReactPlayer playing url={{src:"../videos/videoCapez.mp4", type:"video"}}
+            width="100%"
+            height="100%">
+          </ReactPlayer></div>
+      </Row></Container>
   );
 };
 
