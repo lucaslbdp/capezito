@@ -71,7 +71,7 @@ const Contacto = () => {
               onChange={(e) => handleChangeInput(e)}
               name="name"
               value={state.name}
-              require
+              required
             />
             <MDBInput
               label="Tu email"
@@ -84,7 +84,7 @@ const Contacto = () => {
               name="email"
               onChange={(e) => handleChangeInput(e)}
               value={state.email}
-              require
+              required
             />
             <MDBInput
               label="Tema"
@@ -97,7 +97,7 @@ const Contacto = () => {
               name="tema"
               onChange={(e) => handleChangeInput(e)}
               value={state.tema}
-              require
+              required
             />
             <MDBInput
               type="textarea"
@@ -107,7 +107,7 @@ const Contacto = () => {
               name="mensaje"
               onChange={(e) => handleChangeInput(e)}
               value={state.mensaje}
-              require
+              required
             />
           </div>
           <div className="text-center">
