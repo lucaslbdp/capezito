@@ -13,7 +13,6 @@ import { Link } from "react-scroll";
 
 class Header extends Component {
 
-
     state = {
         isOpen: false
     };
@@ -30,16 +29,7 @@ class Header extends Component {
                         <MDBNavbarBrand className="black-text mr-0">
                             <MDBNavLink to="/" className="pl-0 pr-0 img-header">
                                 <MDBAnimation type="slideInLeft">
-                                <img src={logoHead} alt="logo" className="img-header"></img>
-                                    {/* <Link
-                                        activeClass="active"
-                                        to="section1"
-                                        spy={true}
-                                        smooth={true}
-                                        offset={-70}
-                                        duration={500}
-                                    >
-                                       </Link> */}
+                                    <img src={logoHead} alt="logo" className="img-header"></img>
                                 </MDBAnimation>
                             </MDBNavLink>
                         </MDBNavbarBrand >
