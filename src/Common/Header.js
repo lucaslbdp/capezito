@@ -8,18 +8,18 @@ import logoHead from "../img/logoHead.png";
 import instagramIcon from "../img/instagramIcon.png";
 import whatsappIcon from "../img/whatsappIcon.png";
 import facebookIcon from "../img/facebookIcon.png";
-import { Link } from "react-scroll";
 
 
 class Header extends Component {
 
     state = {
-        isOpen: false
-    };
-
-    toggleCollapse = () => {
-        this.setState({ isOpen: !this.state.isOpen });
+        navbarCollapse1: ''
     }
+    toggleCollapse = collapseID => () => {
+        this.setState(prevState => ({
+            collapseID: prevState.collapseID !== collapseID ? collapseID : ""
+        }));
+    };
 
     render() {
         return (
@@ -32,28 +32,30 @@ class Header extends Component {
                                     <img src={logoHead} alt="logo" className="img-header"></img>
                                 </MDBAnimation>
                             </MDBNavLink>
-                        </MDBNavbarBrand >
-                        <MDBNavbarNav right>
+                        </MDBNavbarBrand  >
+                        <MDBNavbarToggler className="header-no" image="https://mdbootstrap.com/img/svg/hamburger6.svg?color=000" onClick={this.toggleCollapse('navbarCollapse1')}/>
+                        <MDBCollapse id="navbarCollapse1" isOpen={this.state.collapseID} navbar>
+                            <MDBNavbarNav right>
 
-                            <div className="redes-container pb-2 header-no">
-                                <ul className="pl-0">
-                                    <li>  <a
-                                        target="_blank noreferrer"
-                                        href="https://www.instagram.com/capezcomunicacion/"
-                                    >
-                                        <img src={instagramIcon} alt="instag" className="icono-header"></img></a></li>
-                                    <li>     <a
-                                        target="_blank noreferrer"
-                                        href="https://api.whatsapp.com/send?phone=+5493815516016"
-                                    >
-                                        <img src={whatsappIcon} alt="whats" className="icono-header"></img></a></li>
-                                    <li>      <a
-                                        target="_blank noreferrer"
-                                        href="https://www.facebook.com/capezcomunicacion"
-                                    >
-                                        <img src={facebookIcon} alt="fb" className="icono-header"></img></a></li>
-                                </ul>   </div>
-                        </MDBNavbarNav>
+                                <div className="redes-container pb-3 header-no">
+                                    <ul className="pl-3">
+                                        <li>  <a
+                                            target="_blank noreferrer"
+                                            href="https://www.instagram.com/capezcomunicacion/"
+                                        >
+                                            <img src={instagramIcon} alt="instag" className="icono-header"></img></a></li>
+                                        <li>     <a
+                                            target="_blank noreferrer"
+                                            href="https://api.whatsapp.com/send?phone=+5493815516016"
+                                        >
+                                            <img src={whatsappIcon} alt="whats" className="icono-header"></img></a></li>
+                                        <li>      <a
+                                            target="_blank noreferrer"
+                                            href="https://www.facebook.com/capezcomunicacion"
+                                        >
+                                            <img src={facebookIcon} alt="fb" className="icono-header"></img></a></li>
+                                    </ul>   </div>
+                            </MDBNavbarNav></MDBCollapse>
                     </div>
                 </MDBNavbar>
             </Router>

@@ -101,6 +101,12 @@ footer{
 
 }
 
+@media(max-width: 335px){
+  .header-no{
+    display: none;
+  }
+}
+
 @media(max-width: 360px){
   .boton-footer{
     max-width: 90%;
@@ -116,10 +122,6 @@ footer{
   .img-header{
     width: 95%;
   }
-  .header-no{
-    display: none;
-  }
-
 }
 
 
@@ -158,5 +160,6 @@ footer{
 
   .redes-container ul li{
     margin: 0 2px;
+    margin-right: auto;
   }
 }
