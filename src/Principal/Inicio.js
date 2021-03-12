@@ -8,7 +8,7 @@ import PodemosAyudarte from "../Components/PodemosAyudarte";
 
 const Inicio = () => {
   return (
-    <div style={{ width: "100%" }}>
+    <div>
       <Carrusel />
       <PodemosAyudarte />
       <Jumbo />

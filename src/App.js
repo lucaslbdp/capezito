@@ -9,7 +9,7 @@ import "./bootstrap.min.css";
 
 function App() {
   return (
-    <div className="appContainer">
+    <div>
       <Header />
       <Switch>
         <Route exact path="/">

@@ -24,7 +24,7 @@ class Header extends Component {
     render() {
         return (
             <Router>
-                <MDBNavbar color="grey lighten-4" light expand="md" className="pb-0 pt-0 sticky-top" scrolling>
+                <MDBNavbar color="grey lighten-4" light expand="md" className="pb-0 pt-0 sticky-top" scrolling transparent>
                     <div className="container">
                         <MDBNavbarBrand className="black-text mr-0">
                             <MDBNavLink to="/" className="pl-0 pr-0 img-header">
@@ -33,7 +33,7 @@ class Header extends Component {
                                 </MDBAnimation>
                             </MDBNavLink>
                         </MDBNavbarBrand  >
-                        <MDBNavbarToggler className="header-no" image="https://mdbootstrap.com/img/svg/hamburger6.svg?color=000" onClick={this.toggleCollapse('navbarCollapse1')}/>
+                        <MDBNavbarToggler className="header-no" image="https://mdbootstrap.com/img/svg/hamburger6.svg?color=2BBBAD " onClick={this.toggleCollapse('navbarCollapse1')}/>
                         <MDBCollapse id="navbarCollapse1" isOpen={this.state.collapseID} navbar>
                             <MDBNavbarNav right>
 
