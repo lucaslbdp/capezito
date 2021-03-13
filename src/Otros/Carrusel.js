@@ -2,7 +2,6 @@ import React from "react";
 import "./Carrusel.css";
 import ReactPlayer from 'react-player';
 import Video from '../videos/videoCapez.mp4'
-import { Container } from "react-bootstrap";
 
 const Nosotros = () => {
 
