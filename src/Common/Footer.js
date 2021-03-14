@@ -6,6 +6,7 @@ import facebookIcon from "../img/facebookIcon.png";
 import instagramIcon from "../img/instagramIcon.png";
 import whatsappIcon from "../img/whatsappIcon.png";
 import "../App.css";
+import { MDBView } from "mdbreact";
 
 const Footer = () => {
   return (
@@ -20,35 +21,37 @@ const Footer = () => {
             <p>Desarrollado por Lucas Barrionuevo</p>
           </div>
           <div className="col-sm-12 col-md-6 col-lg-4 ml-auto">
-          <div className="">
-            <a style={{ color: "black" }}
-              target="_blank noreferrer"
-              href="https://api.whatsapp.com/send?phone=+5493815516016"
-            >
-              <img src={contactar} alt="img contactar" className="boton-footer"></img></a>
-            <div className="ml-4 red-footer">
-              <p className="mt-3 parrafo-seguinos">Seguinos en nuestras redes:</p>
-              <div className="seguinos-footer">
-              <a
-                target="_blank noreferrer"
-                href="https://www.facebook.com/capezcomunicacion"
-              >
-              <img src={facebookIcon} alt="icono fb"className="ml-5 icono-footer"></img></a>
-              <a
-                target="_blank noreferrer"
-                href="https://www.instagram.com/capezcomunicacion/"
-              >
-              <img src={instagramIcon} alt="icono ig" className="ml-2 icono-footer"></img></a>
+            <div className="">
               <a style={{ color: "black" }}
                 target="_blank noreferrer"
                 href="https://api.whatsapp.com/send?phone=+5493815516016"
               >
-              <img src={whatsappIcon} alt="icono wp" className="ml-2 icono-footer"></img></a>
+<MDBView hover zoom>
+                <img src={contactar} alt="img contactar" className="boton-footer"></img></MDBView></a>
+              <div className="ml-4 red-footer">
+                <p className="mt-3 parrafo-seguinos">Seguinos en nuestras redes:</p>
+                <div className="seguinos-footer">
+                  <a
+                    target="_blank noreferrer"
+                    href="https://www.facebook.com/capezcomunicacion"
+                  >
+
+                    <img src={facebookIcon} alt="icono fb" className="ml-3 icono-footer"></img></a>
+                  <a
+                    target="_blank noreferrer"
+                    href="https://www.instagram.com/capezcomunicacion/"
+                  >
+                    <img src={instagramIcon} alt="icono ig" className="ml-2 icono-footer"></img></a>
+                  <a style={{ color: "black" }}
+                    target="_blank noreferrer"
+                    href="https://api.whatsapp.com/send?phone=+5493815516016"
+                  >
+                    <img src={whatsappIcon} alt="icono wp" className="ml-2 icono-footer"></img></a>
+                </div></div>
             </div></div>
-          </div></div>
-          </Row>
-          </Container>
-        
+        </Row>
+      </Container>
+
       <hr style={{ width: "90%" }}></hr>
     </footer>
   );

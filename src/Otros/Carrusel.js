@@ -1,25 +1,15 @@
 import React from "react";
 import "./Carrusel.css";
-import ReactPlayer from 'react-player';
-import Video from '../videos/videoCapez.mp4'
+import slider1 from "../img/slider1.png"
+
 
 const Nosotros = () => {
 
   return (
-
-      <div className='player-wrapper'>
-        <ReactPlayer
-          className='react-player'
-          width="100%"
-          height="85%"
-          controls={true}
-          playing={true}
-          loop
-          muted
-          allow='autoplay; encrypted-media'
-          url={Video}
-        />
+      <div className="carrusel-img">
+        <img src={slider1} alt="slider" width="100%"></img>
       </div>
+    
   );
 };
 

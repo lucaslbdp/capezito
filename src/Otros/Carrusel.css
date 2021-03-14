@@ -1,10 +1,41 @@
 .player-wrapper {
     position: relative;
-    padding-top: 56.25%;
+    padding-top: 49.55%;
   }
+
+  .tipografia{
+    letter-spacing: 0cm;
+    text-transform: initial;
+    font-family: 'Ranchers', cursive;
+  }
+  .carrusel-img{
+    margin-top: -138px;
+  }
+
+
+.container-multimedia{
+  display: flex;
+  flex-direction: row;
+}
+
+.container-carrusel{
+  display: flex;
+  flex-direction: row-reverse;
+}
   
   .react-player {
     position: absolute;
     top: 0;
     left: 0;
+  }
+  .primer-div{
+    text-align: center;
+    align-content: center;
+    align-self: center;
+  }
+
+  @media (max-width: 949px) {
+    .carrusel-img{
+      margin-top: 0px;
+    }
   }

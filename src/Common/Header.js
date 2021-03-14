@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {
-    MDBNavbar, MDBNavbarBrand, MDBNavLink, MDBAnimation, MDBNavbarNav, MDBNavbarToggler, MDBCollapse,
+    MDBNavbar, MDBNavbarBrand, MDBView, MDBNavLink, MDBAnimation, MDBNavbarNav, MDBNavbarToggler, MDBCollapse,
 } from "mdbreact";
 import { BrowserRouter as Router } from 'react-router-dom';
 import "../App.css";
@@ -24,10 +24,10 @@ class Header extends Component {
     render() {
         return (
             <Router>
-                <MDBNavbar color="grey lighten-4" light expand="md" className="pb-0 pt-0 sticky-top" scrolling transparent>
+                <MDBNavbar color="grey lighten-4" light expand="md" className="pb-0 pt-0 sticky-top " scrolling transparent>
                     <div className="container">
                         <MDBNavbarBrand className="black-text mr-0">
-                            <MDBNavLink to="/" className="pl-0 pr-0 img-header">
+                            <MDBNavLink to="/" className="pl-0 pr-0 img-header pt-0 pb-0">
                                 <MDBAnimation type="slideInLeft">
                                     <img src={logoHead} alt="logo" className="img-header"></img>
                                 </MDBAnimation>
@@ -37,23 +37,26 @@ class Header extends Component {
                         <MDBCollapse id="navbarCollapse1" isOpen={this.state.collapseID} navbar>
                             <MDBNavbarNav right>
 
-                                <div className="redes-container pb-3 header-no">
+                                <div className="redes-container header-no">
                                     <ul className="pl-3">
                                         <li>  <a
                                             target="_blank noreferrer"
                                             href="https://www.instagram.com/capezcomunicacion/"
                                         >
-                                            <img src={instagramIcon} alt="instag" className="icono-header"></img></a></li>
+                                            <MDBView hover zoom>
+                                            <img src={instagramIcon} alt="instag" className="icono-header"></img></MDBView></a></li>
                                         <li>     <a
                                             target="_blank noreferrer"
                                             href="https://api.whatsapp.com/send?phone=+5493815516016"
                                         >
-                                            <img src={whatsappIcon} alt="whats" className="icono-header"></img></a></li>
+                                            <MDBView hover zoom>
+                                            <img src={whatsappIcon} alt="whats" className="icono-header"></img></MDBView></a></li>
                                         <li>      <a
                                             target="_blank noreferrer"
                                             href="https://www.facebook.com/capezcomunicacion"
                                         >
-                                            <img src={facebookIcon} alt="fb" className="icono-header"></img></a></li>
+                                            <MDBView hover zoom>
+                                            <img src={facebookIcon} alt="fb" className="icono-header"></img></MDBView></a></li>
                                     </ul>   </div>
                             </MDBNavbarNav></MDBCollapse>
                     </div>

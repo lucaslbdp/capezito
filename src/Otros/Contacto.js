@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import {
   MDBBtn,
   MDBIcon,
-  MDBInput,
+  MDBInput, MDBAnimation
 } from "mdbreact";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
@@ -55,9 +55,10 @@ const Contacto = () => {
   return (
     <div className="contacto-container">
       <div className="contacto-form">
+      <MDBAnimation reveal type="zoomIn" duration="2s">
         <form onSubmit={enviarFormulario} style={{}}>
-          <p className="h5 text-center mb-4">
-            Hacé tu consulta ¡Estamos para ayudarte!
+          <p className="h5 mb-4">
+           Hacé tu consulta ¡Estamos para ayudarte!
           </p>
           <div className="grey-text">
             <MDBInput
@@ -122,7 +123,7 @@ const Contacto = () => {
               <MDBIcon far icon="paper-plane" className="ml-1" />
             </MDBBtn>
           </div>
-        </form>
+        </form></MDBAnimation>
       </div>
       <div className="col-sm-12 col-md-6 contacto-image">
         <img src={imgBody} alt="body img" style={{maxWidth:"100%"}}></img>

@@ -22,10 +22,10 @@ const PodemosAyudarte = () => {
           alt="img ayudar"
           className="ayuda-img"
         />
-        <h1 className="titulo"
+        <p className="titulo"
         >
           <strong>¿Cómo podemos ayudarte?</strong>
-        </h1>
+        </p>
       </div>
       <div
         className="podemosAyudarteDescription"
@@ -38,7 +38,7 @@ const PodemosAyudarte = () => {
         }}
       >
         <h3
-          className="pb-5 parrafo"
+          className="pb-4 parrafo"
         >
           Tenemos los servicios de comunicación <br></br>que tu empresa necesita
         </h3>
