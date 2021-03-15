@@ -2,11 +2,10 @@ import React from 'react';
 import ReactPlayer from 'react-player';
 import Video from '../videos/videoCapez.mp4';
 import "./Carrusel.css";
-import flecha from "../img/flecha.png"
-import { faSlidersH } from '@fortawesome/free-solid-svg-icons';
 
 
 const Multimedia = () => {
+
     return (
         <div className='player-wrapper'>
             <ReactPlayer

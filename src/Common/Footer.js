@@ -10,7 +10,7 @@ import { MDBView } from "mdbreact";
 
 const Footer = () => {
   return (
-    <footer className="elegant-color text-light">
+    <footer className="elegant-color text-light mt-0">
       <Container>
         <Row>
           <div className="col-sm-12 col-md-4 mt-4 logo-footer">
