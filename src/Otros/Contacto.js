@@ -55,7 +55,7 @@ const Contacto = () => {
   return (
     <div className="contacto-container">
       <div className="contacto-form">
-      <MDBAnimation reveal type="zoomIn" duration="2s">
+      <MDBAnimation reveal type="zoomIn" duration="1s">
         <form onSubmit={enviarFormulario} style={{}}>
           <p className="h5 mb-4">
            Hacé tu consulta ¡Estamos para ayudarte!

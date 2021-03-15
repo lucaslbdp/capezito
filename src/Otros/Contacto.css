@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   flex: 1;
-  margin-left: 50px;
+  margin-left: 40px;
   margin-top: 0px;
   padding-left: 10px;
   justify-content: space-around;
@@ -14,13 +14,13 @@
   margin-top: 40px;
   margin-bottom: 60px;
   padding-top: 40px;
-  margin-left: 50px;
+  margin-left: 110px;
 }
 
 .contacto-image {
   display: flex;
   flex: 1;
-  margin-right: 40px;
+  margin-right: 90px;
 }
 
 
@@ -76,19 +76,18 @@
   .contacto-form {
     max-width: 80%;
     display: flex;
-    padding-top: 15px;
+    padding-top: 5px;
   }
   .contacto-container {
     display: flex;
     flex-direction: column;
-    display: inline-block;
   }
   .contacto-image {
     max-width: 100%;
   }
 }
 /* resolucion para pc de escritorio*/
-@media (max-width: 992px) {
+@media (max-width: 970px) {
   .contacto-form {
     max-width: 80%;
     display: flex;
@@ -99,5 +98,6 @@
   }
   .contacto-image {
     max-width: 100%;
+    padding: 0;
   }
 }

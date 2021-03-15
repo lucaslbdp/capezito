@@ -26,8 +26,7 @@ const Footer = () => {
                 target="_blank noreferrer"
                 href="https://api.whatsapp.com/send?phone=+5493815516016"
               >
-<MDBView hover zoom>
-                <img src={contactar} alt="img contactar" className="boton-footer"></img></MDBView></a>
+                <img src={contactar} alt="img contactar" className="boton-footer"></img></a>
               <div className="ml-4 red-footer">
                 <p className="mt-3 parrafo-seguinos">Seguinos en nuestras redes:</p>
                 <div className="seguinos-footer">

@@ -2,6 +2,9 @@
     position: relative;
     padding-top: 49.55%;
   }
+  .img-slider{
+    width: 90%;
+  }
 
   .tipografia{
     letter-spacing: 0cm;
@@ -9,9 +12,14 @@
     font-family: 'Ranchers', cursive;
   }
   .carrusel-img{
-    margin-top: -138px;
+    margin-top: 0px;
+    display: flex;
   }
 
+  .texto-carrusel{
+    display: flex;
+    align-items: center;
+  }
 
 .container-multimedia{
   display: flex;
@@ -33,6 +41,31 @@
     align-content: center;
     align-self: center;
   }
+
+.texto-h2{
+  font-family: 'Ranchers', cursive;
+  text-transform: initial;
+  letter-spacing: 0cm;
+}
+
+
+
+
+
+@media(max-width:739px){
+  
+}
+
+  @media(max-width: 768px){
+    .container-carrusel{
+      display: inline-block;
+    }
+    .texto-carrusel{
+      margin-top: 25px;
+      justify-content: center;
+    }
+  }
+
 
   @media (max-width: 949px) {
     .carrusel-img{

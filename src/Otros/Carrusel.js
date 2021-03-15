@@ -6,10 +6,14 @@ import slider1 from "../img/slider1.png"
 const Nosotros = () => {
 
   return (
-      <div className="carrusel-img">
-        <img src={slider1} alt="slider" width="100%"></img>
+    <div className="container-carrusel">
+      <div className="carrusel-img col-md-7">
+        <img src={slider1} alt="slider" className="img-slider"></img>
       </div>
-    
+      <div className="texto-carrusel col-sm-12 col-md-4">
+        <h2 className="text-center texto-h2">Hacé tu comunicación eficiente  </h2>
+      </div>
+    </div>
   );
 };
 
