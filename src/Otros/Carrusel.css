@@ -3,14 +3,18 @@
     padding-top: 49.55%;
   }
   .img-slider{
-    width: 70%;
-    margin-left: 13%;
+    width: 100%;
+
   }
 
   .tipografia{
     letter-spacing: 0cm;
     text-transform: initial;
     font-family: 'Ranchers', cursive;
+  }
+
+  .img-capez{
+    width: 100%;
   }
 
   .texto-carrusel{
@@ -26,8 +30,6 @@
 
 .container-carrusel{
   display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
 }
   
   .react-player {

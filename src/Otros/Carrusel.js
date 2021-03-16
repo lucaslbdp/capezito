@@ -1,17 +1,18 @@
 import React from "react";
 import "./Carrusel.css";
-import slider1 from "../img/slider1.png"
+import slider1 from "../img/slider1.png";
+import imgCapez from "../img/imgCapez.jpg";
 
 
 const Nosotros = () => {
 
   return (
     <div className="container-carrusel">
-      <div className="carrusel-img col-md-7">
+      <div className="carrusel-img col-md-6">
         <img src={slider1} alt="slider" className="img-slider"></img>
       </div>
-      <div className="texto-carrusel col-sm-12 col-md-4 col-lg-3">
-        <h2 className="text-center texto-h2">Hacé tu comunicación eficiente  </h2>
+      <div className="col-sm-12 col-md-6">
+        <img src={imgCapez} alt="capez" className="img-capez"></img>
       </div>
     </div>
   );

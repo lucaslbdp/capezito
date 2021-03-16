@@ -31,7 +31,7 @@ const Clientes = () => {
                 if (elemento.isIntersecting) {
                     elemento.target.classList.add('animar')
                     elemento.target.classList.remove('ocultar')
-                    setTimeout(animarContadores, 250)
+                    setTimeout(animarContadores, 1000)
                 }
             });
         }
@@ -50,16 +50,19 @@ const Clientes = () => {
     return (
         
         <MDBJumbotron className="mb-0 success-color text-light alinear">
-            <div className="contador ocultar col-sm-12 col-md-4">
-                <div className="contador_cantidad" data-cantidad-total="38">
-                    0
-                    </div><h2 className="texto-cliente">Clientes</h2>
+            <div className="contador ocultar col-sm-12 col-md-3">
+                <div className="contador_cantidad" data-cantidad-total="2">
+                  0
+                    </div><h2 className="texto-cliente"><strong>Años de<br></br> trayectoria</strong></h2>
             </div>
-            <div className="contador ocultar col-sm-12 col-md-4">
-                <div className="contador_cantidad" data-cantidad-total="2">0</div><h2 className="texto-cliente">Años en el mercado</h2>
+            <div className="contador ocultar col-sm-12 col-md-3">
+                <div className="contador_cantidad" data-cantidad-total="18">0</div><h2 className="texto-cliente"><strong>Clientes</strong></h2>
             </div>
-            <div className="contador ocultar col-sm-12 col-md-4">
-                <div className="contador_cantidad" data-cantidad-total="17">0</div><h2 className="texto-cliente">Propuestas disponibles</h2>
+            <div className="contador ocultar col-sm-12 col-md-3">
+                <div className="contador_cantidad" data-cantidad-total="5">0</div><h2 className="texto-cliente"><strong>Equipos</strong></h2>
+            </div>
+            <div className="contador ocultar col-sm-12 col-md-3">
+                <div className="contador_cantidad" data-cantidad-total="12">0</div><h2 className="texto-cliente"><strong>Propuestas<br></br> disponibles</strong></h2>
             </div>
         </MDBJumbotron>
     );

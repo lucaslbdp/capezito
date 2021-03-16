@@ -15,6 +15,8 @@
     font-size: 40px;
     margin: 10px 0;
     font-weight: 100;
+    -webkit-text-stroke-width: thick;
+    color: ivory;
   }
   
   @keyframes aparecer {
