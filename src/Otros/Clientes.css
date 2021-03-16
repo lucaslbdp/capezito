@@ -40,7 +40,16 @@
       text-transform: initial;
       letter-spacing: 0;
       color: white;
+      text-align:center;
   }
+
+  .porcentaje1{
+    font-size: 1cm;
+    
+  }
+
+
+
 
   @media (max-width: 575){
     .alinear{
@@ -57,6 +66,10 @@
     @media (max-width: 768px) {
         .alinear{
             flex-direction: column;
+          }
+          .contador_cantidad{
+            margin-top: 15px;
+            margin-bottom: 15px;
           }
     }
     

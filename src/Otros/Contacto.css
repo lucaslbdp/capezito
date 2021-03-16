@@ -25,50 +25,25 @@
 
 
 @media(max-width: 380px){
-  .contacto-constainer{
-    margin-right: 100px;
+  .contacto-container{
+    margin-right: 10px;
   }
 }
 
 
-@media(max-width: 574px){
-  .contacto-image{
-    max-width: 70%;
-    margin-right: 100px;
-  }
-}
 
-
-@media (max-width: 575px) {
-  .contacto-form {
-    max-width: 80%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    margin-top: 25px;
-  }
-  .contacto-container {
-    flex-direction: column;
-    display: inline-block;
-  }
-  .contacto-image {
-    max-width: 100%;
-    margin-right: 40px;
-  }
-}
 /* resolucion para dispositivos pequeños*/
 @media (max-width: 576px) {
   .contacto-form {
     max-width: 80%;
     display: flex;
+    margin-right: 10px;
   }
+}
+
+@media (max-width: 678px) {
   .contacto-container {
-    display: flex;
-    flex-direction: column;
-    display: inline-block;
-  }
-  .contacto-image {
-    max-width: 100%;
+    margin-left: 10px!important;
   }
 }
 /* resolucion para tablets*/
@@ -82,22 +57,74 @@
     display: flex;
     flex-direction: column;
   }
-  .contacto-image {
-    max-width: 100%;
+  .contacto-image{
+    display: none!important;
   }
 }
 /* resolucion para pc de escritorio*/
 @media (max-width: 970px) {
   .contacto-form {
-    max-width: 80%;
+    max-width: 100%;
     display: flex;
+    margin-bottom: 50px!important;
   }
   .contacto-container {
     display: flex;
     flex-direction: column;
+    margin-left: 50px;
   }
   .contacto-image {
+    display: flex;
+    max-width: 90%!important;
+  }
+}
+
+
+@media(max-width: 1290px){
+  .contacto-image{
     max-width: 100%;
-    padding: 0;
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .contacto-form {
+    max-width: 80%;
+    margin-left: 2% !important;
+    margin-top: 6%;
+  }
+  .contacto-container{
+    margin-left: 30px;
+    padding-left: 0px;
+  }
+}
+
+
+@media(max-width: 1644px){
+  .contacto-form {
+    margin-left: 8% !important;
+    margin-top: 6%;
+  }
+  .contacto-container {
+    margin-left: 100px; 
+  }
+  .contacto-image{
+    margin-right: 40px;
+  }
+}
+
+@media (max-width:2170px){
+  .contacto-form {
+    max-width: 100%;
+    margin-left: 17%;
+    margin-top: 7%;
+    margin-bottom: 20%;
+  }
+  .contacto-form form{
+    height: 100%;
+  }
+  .contacto-container {
+    margin-left: 50px; 
+  }
+  .contacto-image img{
+    max-height: 90%;
   }
 }

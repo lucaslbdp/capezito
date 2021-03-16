@@ -10,7 +10,7 @@ const Nosotros = () => {
       <div className="carrusel-img col-md-7">
         <img src={slider1} alt="slider" className="img-slider"></img>
       </div>
-      <div className="texto-carrusel col-sm-12 col-md-4">
+      <div className="texto-carrusel col-sm-12 col-md-4 col-lg-3">
         <h2 className="text-center texto-h2">Hacé tu comunicación eficiente  </h2>
       </div>
     </div>

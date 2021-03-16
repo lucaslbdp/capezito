@@ -5,7 +5,7 @@ import "./Clientes.css"
 const Clientes = () => {
     document.addEventListener('DOMContentLoaded', () => {
         const contadores = document.querySelectorAll('.contador_cantidad')
-        const velocidad = 1000
+        const velocidad = 2000000
 
         const animarContadores = () => {
             for (const contador of contadores) {
@@ -16,7 +16,7 @@ const Clientes = () => {
 
                     if (valor_actual < cantidad_maxima) {
                         contador.innerText = Math.ceil(valor_actual + incremento)
-                        setTimeout(actualizar_contador,130)
+                        setTimeout(actualizar_contador,180)
                     } else {
                         contador.innerText = cantidad_maxima
                     }
@@ -49,21 +49,17 @@ const Clientes = () => {
 
     return (
         
-        <MDBJumbotron className="mt-5 mb-0 success-color text-light alinear">
-            <div className="contador ocultar col-sm-12 col-md-3">
+        <MDBJumbotron className="mb-0 success-color text-light alinear">
+            <div className="contador ocultar col-sm-12 col-md-4">
                 <div className="contador_cantidad" data-cantidad-total="38">
                     0
                     </div><h2 className="texto-cliente">Clientes</h2>
             </div>
-            <div className="contador ocultar col-sm-12 col-md-3">
+            <div className="contador ocultar col-sm-12 col-md-4">
                 <div className="contador_cantidad" data-cantidad-total="2">0</div><h2 className="texto-cliente">Años en el mercado</h2>
             </div>
-            <div className="contador ocultar col-sm-12 col-md-3">
-                <div className="contador_cantidad" data-cantidad-total="7">0</div><h2 className="texto-cliente">Propuestas disponibles</h2>
-            </div>
-            <div className="contador ocultar col-sm-12 col-md-3">
-                <div className="contador_cantidad" data-cantidad-total="100">0</div>
-                <h2 className="texto-cliente">Efectividad garantizada</h2>
+            <div className="contador ocultar col-sm-12 col-md-4">
+                <div className="contador_cantidad" data-cantidad-total="17">0</div><h2 className="texto-cliente">Propuestas disponibles</h2>
             </div>
         </MDBJumbotron>
     );

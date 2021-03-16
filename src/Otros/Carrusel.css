@@ -3,7 +3,8 @@
     padding-top: 49.55%;
   }
   .img-slider{
-    width: 90%;
+    width: 70%;
+    margin-left: 13%;
   }
 
   .tipografia{
@@ -11,14 +12,11 @@
     text-transform: initial;
     font-family: 'Ranchers', cursive;
   }
-  .carrusel-img{
-    margin-top: 0px;
-    display: flex;
-  }
 
   .texto-carrusel{
     display: flex;
     align-items: center;
+    margin-left: 7%;
   }
 
 .container-multimedia{
@@ -29,6 +27,7 @@
 .container-carrusel{
   display: flex;
   flex-direction: row-reverse;
+  flex-wrap: wrap;
 }
   
   .react-player {
@@ -63,6 +62,11 @@
     .texto-carrusel{
       margin-top: 25px;
       justify-content: center;
+      margin-left: 0;
+    }
+    .img-slider{
+      width: 100%;
+      margin-left: 0;
     }
   }
 
