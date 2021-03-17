@@ -5,7 +5,7 @@ import "./Clientes.css"
 const Clientes = () => {
     document.addEventListener('DOMContentLoaded', () => {
         const contadores = document.querySelectorAll('.contador_cantidad')
-        const velocidad = 2000000
+        const velocidad = 10000
 
         const animarContadores = () => {
             for (const contador of contadores) {
@@ -16,7 +16,7 @@ const Clientes = () => {
 
                     if (valor_actual < cantidad_maxima) {
                         contador.innerText = Math.ceil(valor_actual + incremento)
-                        setTimeout(actualizar_contador,180)
+                        setTimeout(actualizar_contador,100)
                     } else {
                         contador.innerText = cantidad_maxima
                     }
@@ -31,7 +31,7 @@ const Clientes = () => {
                 if (elemento.isIntersecting) {
                     elemento.target.classList.add('animar')
                     elemento.target.classList.remove('ocultar')
-                    setTimeout(animarContadores, 1000)
+                    setTimeout(animarContadores, 500)
                 }
             });
         }
@@ -51,18 +51,18 @@ const Clientes = () => {
         
         <MDBJumbotron className="mb-0 success-color text-light alinear">
             <div className="contador ocultar col-sm-12 col-md-3">
-                <div className="contador_cantidad" data-cantidad-total="2">
+                <div className="contador_cantidad" data-cantidad-total="1">
                   0
-                    </div><h2 className="texto-cliente"><strong>Años de<br></br> trayectoria</strong></h2>
+                    </div><h2 className="texto-cliente"><strong>Año de<br></br> trayectoria</strong></h2>
             </div>
             <div className="contador ocultar col-sm-12 col-md-3">
                 <div className="contador_cantidad" data-cantidad-total="18">0</div><h2 className="texto-cliente"><strong>Clientes</strong></h2>
             </div>
             <div className="contador ocultar col-sm-12 col-md-3">
-                <div className="contador_cantidad" data-cantidad-total="5">0</div><h2 className="texto-cliente"><strong>Equipos</strong></h2>
+                <div className="contador_cantidad" data-cantidad-total="5">0</div><h2 className="texto-cliente"><strong>Equipos de profesionales</strong></h2>
             </div>
             <div className="contador ocultar col-sm-12 col-md-3">
-                <div className="contador_cantidad" data-cantidad-total="12">0</div><h2 className="texto-cliente"><strong>Propuestas<br></br> disponibles</strong></h2>
+                <div className="contador_cantidad" data-cantidad-total="60000">0</div><h2 className="texto-cliente"><strong>Contactos<br></br>disponibles</strong></h2>
             </div>
         </MDBJumbotron>
     );

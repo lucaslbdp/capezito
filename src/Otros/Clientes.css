@@ -15,7 +15,7 @@
     font-size: 40px;
     margin: 10px 0;
     font-weight: 100;
-    -webkit-text-stroke-width: thick;
+    -webkit-text-stroke-width:thin;
     color: ivory;
   }
   
