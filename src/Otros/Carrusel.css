@@ -3,8 +3,8 @@
     padding-top: 49.55%;
   }
   .img-slider{
-    width: 100%;
-
+    width: 100%;  
+    margin-left:8%;
   }
 
   .tipografia{
@@ -14,14 +14,10 @@
   }
 
   .img-capez{
-    width: 100%;
+    width: 90%;
+    margin-left: 5%;
   }
 
-  .texto-carrusel{
-    display: flex;
-    align-items: center;
-    margin-left: 7%;
-  }
 
 .container-multimedia{
   display: flex;
@@ -30,6 +26,7 @@
 
 .container-carrusel{
   display: flex;
+  margin-top: 2%;
 }
   
   .react-player {
@@ -69,6 +66,9 @@
     .img-slider{
       width: 100%;
       margin-left: 0;
+    }
+    .img-capez{
+      display: none;
     }
   }
 
