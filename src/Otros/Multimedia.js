@@ -7,17 +7,19 @@ import "./Carrusel.css";
 const Multimedia = () => {
 
     return (
-        <div className='player-wrapper'>
-            <ReactPlayer
-                className='react-player'
-                playing={true}
-                width="100%"
-                height="100%"
-                loop
-                muted
-                url={Video}
-            />
-        </div>
+
+            <div className='player-wrapper'>
+                <ReactPlayer
+                    className='react-player'
+                    playing={true}
+                    width="100%"
+                    height="100%"
+                    loop
+                    muted
+                    url={Video}
+                />
+            </div>
+
     );
 };
 

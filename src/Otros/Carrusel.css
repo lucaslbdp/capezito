@@ -22,7 +22,7 @@
 
 .container-multimedia{
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
 }
 
 .container-carrusel{
@@ -47,7 +47,6 @@
   text-transform: initial;
   letter-spacing: 0cm;
 }
-
 
 
 

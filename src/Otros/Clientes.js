@@ -49,7 +49,7 @@ const Clientes = () => {
 
     return (
         
-        <MDBJumbotron className="mb-0 success-color text-light alinear">
+        <MDBJumbotron className="mb-0 text-light alinear" style={{background:"#b1d800"}}>
             <div className="contador ocultar col-sm-12 col-md-3">
                 <div className="contador_cantidad" data-cantidad-total="1">
                   0
