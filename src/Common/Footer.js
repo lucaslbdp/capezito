@@ -28,9 +28,7 @@ const Footer = () => {
               >
                 <img src={contactar} alt="img contactar" className="boton-footer"></img></a>
               <div className="ml-4 red-footer">
-              <p className="mt-4 ml-5" href="https://ferozo.email/?_task=mail&_mbox=INBOX">contacto@capez.com.ar</p>
-
-                <p className="mt-3 parrafo-seguinos">Seguinos en nuestras redes:</p>
+                            <p className="mt-3 parrafo-seguinos">Seguinos en nuestras redes:</p>
                 <div className="seguinos-footer">
                   <a
                     target="_blank noreferrer"
