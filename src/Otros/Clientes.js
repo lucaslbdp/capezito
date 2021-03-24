@@ -51,12 +51,7 @@ const Clientes = () => {
         
         <MDBJumbotron className="mb-0 text-light alinear" style={{background:"#b1d800"}}>
             <div className="contador ocultar col-sm-12 col-md-3">
-                <div className="contador_cantidad" data-cantidad-total="1">
-                  0
-                    </div><h2 className="texto-cliente"><strong>Año de<br></br> trayectoria</strong></h2>
-            </div>
-            <div className="contador ocultar col-sm-12 col-md-3">
-                <div className="contador_cantidad" data-cantidad-total="18">0</div><h2 className="texto-cliente"><strong>Clientes</strong></h2>
+                <div className="contador_cantidad" data-cantidad-total="4">0</div><h2 className="texto-cliente"><strong>Clientes</strong></h2>
             </div>
             <div className="contador ocultar col-sm-12 col-md-3">
                 <div className="contador_cantidad" data-cantidad-total="5">0</div><h2 className="texto-cliente"><strong>Equipos de profesionales</strong></h2>
