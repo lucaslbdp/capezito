@@ -3,11 +3,11 @@ import {
     MDBNavbar, MDBNavbarBrand, MDBView, MDBNavLink, MDBAnimation, MDBNavbarNav, MDBNavbarToggler, MDBCollapse,
 } from "mdbreact";
 import { BrowserRouter as Router } from 'react-router-dom';
-import "../App.css";
-import logoHead from "../img/logoHead.png";
-import instagramIcon from "../img/instagramIcon.png";
-import whatsappIcon from "../img/whatsappIcon.png";
-import facebookIcon from "../img/facebookIcon.png";
+import "../../App.css";
+import logoHead from "../../img/logoHead.png";
+import instagramIcon from "../../img/instagramIcon.png";
+import whatsappIcon from "../../img/whatsappIcon.png";
+import facebookIcon from "../../img/facebookIcon.png";
 
 
 class Header extends Component {

@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Porcentaje.css";
+import "./porcentaje.css";
 
 const Porcentaje = () => {
     return (

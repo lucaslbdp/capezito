@@ -1,11 +1,11 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
-import logoFooter2 from "../img/logoFooter2.png";
-import contactar from "../img/contactar.png";
-import facebookIcon from "../img/facebookIcon.png";
-import instagramIcon from "../img/instagramIcon.png";
-import whatsappIcon from "../img/whatsappIcon.png";
-import "../App.css";
+import logoFooter2 from "../../img/logoFooter2.png";
+import contactar from "../../img/contactar.png";
+import facebookIcon from "../../img/facebookIcon.png";
+import instagramIcon from "../../img/instagramIcon.png";
+import whatsappIcon from "../../img/whatsappIcon.png";
+import "../../App.css";
 
 const Footer = () => {
   return (

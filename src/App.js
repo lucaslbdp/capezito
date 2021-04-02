@@ -1,8 +1,8 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Inicio from "./containers/principal/inicio";
-import Header from "./common/header";
-import Footer from "./common/footer";
+import Header from "./components/common/header";
+import Footer from "./components/common/footer";
 import "./App.css";
 import "./bootstrap.min.css";
 
