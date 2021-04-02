@@ -1,6 +1,7 @@
 import React from "react";
 import "./carousel.css";
 import slider1 from "../../img/slider1.png"
+import imgCapez from '../../img/imgCapez.jpeg'
 
 
 const Carousel = () => {
@@ -10,8 +11,8 @@ const Carousel = () => {
       <div className="carrusel-img col-md-7">
         <img src={slider1} alt="slider" className="img-slider"></img>
       </div>
-      <div className="texto-carrusel col-sm-12 col-md-4">
-        <h2 className="text-center texto-h2">Hacé tu comunicación eficiente  </h2>
+      <div className="col-sm-12 col-md-5 pl-0">
+        <img src={imgCapez} alt="capez" className="img-capez"></img>
       </div>
     </div>
   );
