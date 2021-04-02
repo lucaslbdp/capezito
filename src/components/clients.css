@@ -10,11 +10,16 @@
     display: flex;
     align-items: baseline;
   }
+  .back{
+    background-color: #b1d800;
+  }
   
   .quantity_counter {
     font-size: 40px;
     margin: 10px 0;
     font-weight: 100;
+    -webkit-text-stroke-width:thin;
+    color: ivory;
   }
   
   @keyframes aparecer {
@@ -40,7 +45,16 @@
       text-transform: initial;
       letter-spacing: 0;
       color: white;
+      text-align:center;
   }
+
+  .porcentaje1{
+    font-size: 1cm;
+    
+  }
+
+
+
 
   @media (max-width: 575){
     .alinear{
@@ -57,6 +71,10 @@
     @media (max-width: 768px) {
         .alinear{
             flex-direction: column;
+          }
+          .contador_cantidad{
+            margin-top: 15px;
+            margin-bottom: 15px;
           }
     }
     

@@ -3,7 +3,8 @@
     padding-top: 49.55%;
   }
   .img-slider{
-    width: 90%;
+    width: 100%;  
+    margin-left:12%;
   }
 
   .tipografia{
@@ -11,24 +12,23 @@
     text-transform: initial;
     font-family: 'Ranchers', cursive;
   }
-  .carrusel-img{
-    margin-top: 0px;
-    display: flex;
+
+  .img-capez{
+    width: 95%;
+    margin-right: 1%;
+    padding-left: 0px;
   }
 
-  .texto-carrusel{
-    display: flex;
-    align-items: center;
-  }
 
 .container-multimedia{
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
 }
 
 .container-carrusel{
   display: flex;
-  flex-direction: row-reverse;
+  margin-top: 2%;
+  max-width: 98%;
 }
   
   .react-player {
@@ -51,7 +51,6 @@
 
 
 
-
 @media(max-width:739px){
   
 }
@@ -63,6 +62,14 @@
     .texto-carrusel{
       margin-top: 25px;
       justify-content: center;
+      margin-left: 0;
+    }
+    .img-slider{
+      width: 100%;
+      margin-left: 0;
+    }
+    .img-capez{
+      display: none;
     }
   }
 
