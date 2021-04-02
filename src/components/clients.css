@@ -5,7 +5,7 @@
     align-items: baseline;
     padding: 0px 0px;
   }
-  
+
   .alinear{
     display: flex;
     align-items: baseline;
@@ -13,15 +13,15 @@
   .back{
     background-color: #b1d800;
   }
-  
-  .quantity_counter {
+
+  .contador_cantidad {
     font-size: 40px;
     margin: 10px 0;
     font-weight: 100;
     -webkit-text-stroke-width:thin;
     color: ivory;
   }
-  
+
   @keyframes aparecer {
     0% {
       opacity: 0;
@@ -32,15 +32,15 @@
       transform: translateY(0);
     }
   }
-  
+
   .ocultar {
     opacity: 0;
   }
-  
+
   .animar {
     animation: aparecer 2s;
   }
-  
+
   .texto-cliente{
       text-transform: initial;
       letter-spacing: 0;
@@ -50,7 +50,7 @@
 
   .porcentaje1{
     font-size: 1cm;
-    
+
   }
 
 
@@ -61,13 +61,13 @@
       flex-direction: column;
     }
   }
-  
+
   @media (max-width: 576px) {
     .alinear{
       flex-direction: column;
     }
     }
-    
+
     @media (max-width: 768px) {
         .alinear{
             flex-direction: column;
@@ -77,7 +77,7 @@
             margin-bottom: 15px;
           }
     }
-    
+
     @media (max-width: 992px) {
-  
+
     }

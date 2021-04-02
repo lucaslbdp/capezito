@@ -1,6 +1,7 @@
 import React from "react";
 import "./carousel.css";
 import slider1 from "../../img/slider1.png"
+import imgCapez from '../../img/imgCapez.jpeg'
 
 
 const Carousel = () => {

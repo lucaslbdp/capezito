@@ -2,42 +2,41 @@ import React from 'react';
 import { MDBJumbotron } from "mdbreact";
 import "./clients.css"
 
-const Clients = () => {
-    
+const Clientes = () => {
     document.addEventListener('DOMContentLoaded', () => {
-        const counters = document.querySelectorAll('.quantity_counter')
-        const speed  = 1000
+        const contadores = document.querySelectorAll('.contador_cantidad')
+        const velocidad = 10000
 
-        const animateCounters = () => {
-            for (const contador of counters) {
-                const updateCounter = () => {
-                    let maxQuantity = +contador.dataset.quantityTotal;
-                    let currentValue = +contador.innerText;
-                    let increase = maxQuantity / speed ;
+        const animarContadores = () => {
+            for (const contador of contadores) {
+                const actualizar_contador = () => {
+                    let cantidad_maxima = +contador.dataset.cantidadTotal,
+                        valor_actual = +contador.innerText,
+                        incremento = cantidad_maxima / velocidad
 
-                    if (currentValue < maxQuantity) {
-                        contador.innerText = Math.ceil(currentValue + increase)
-                        setTimeout(updateCounter,130)
+                    if (valor_actual < cantidad_maxima) {
+                        contador.innerText = Math.ceil(valor_actual + incremento)
+                        setTimeout(actualizar_contador,100)
                     } else {
-                        contador.innerText = maxQuantity
+                        contador.innerText = cantidad_maxima
                     }
                 }
-                updateCounter()
+                actualizar_contador()
             }
 
         }
 
-        const showCounters = elementos => {
+        const mostrarContadores = elementos => {
             elementos.forEach(elemento => {
                 if (elemento.isIntersecting) {
                     elemento.target.classList.add('animar')
                     elemento.target.classList.remove('ocultar')
-                    setTimeout(animateCounters, 250)
+                    setTimeout(animarContadores, 500)
                 }
             });
         }
 
-        const observer = new IntersectionObserver(showCounters, {
+        const observer = new IntersectionObserver(mostrarContadores, {
             threshold: 1
         })
 
@@ -50,24 +49,18 @@ const Clients = () => {
 
     return (
         
-        <MDBJumbotron className="mt-5 mb-0 success-color text-light alinear">
-            <div className="contador ocultar col-sm-12 col-md-3">
-                <div className="quantity_counter" data-quantity-total="38">
-                    0
-                    </div><h2 className="texto-cliente">Clientes</h2>
+        <MDBJumbotron className="mb-0 text-light alinear" style={{background:"#b1d800"}}>
+            <div className="contador ocultar col-sm-12 col-md-4">
+                <div className="contador_cantidad" data-cantidad-total="4">0</div><h2 className="texto-cliente"><strong>Clientes</strong></h2>
             </div>
-            <div className="contador ocultar col-sm-12 col-md-3">
-                <div className="quantity_counter" data-quantity-total="2">0</div><h2 className="texto-cliente">Años en el mercado</h2>
+            <div className="contador ocultar col-sm-12 col-md-4">
+                <div className="contador_cantidad" data-cantidad-total="5">0</div><h2 className="texto-cliente"><strong>Equipos de profesionales</strong></h2>
             </div>
-            <div className="contador ocultar col-sm-12 col-md-3">
-                <div className="quantity_counter" data-quantity-total="7">0</div><h2 className="texto-cliente">Propuestas disponibles</h2>
-            </div>
-            <div className="contador ocultar col-sm-12 col-md-3">
-                <div className="quantity_counter" data-quantity-total="100">0</div>
-                <h2 className="texto-cliente">Efectividad garantizada</h2>
+            <div className="contador ocultar col-sm-12 col-md-4">
+                <div className="contador_cantidad" data-cantidad-total="60000">0</div><h2 className="texto-cliente"><strong>Contactos<br></br>disponibles</strong></h2>
             </div>
         </MDBJumbotron>
     );
 };
 
-export default Clients;
+export default Clientes;
