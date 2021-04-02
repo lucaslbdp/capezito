@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
 import Video from '../videos/videoCapez.mp4';
-import "./Carrusel.css";
-
 
 const Multimedia = () => {
 

@@ -1,9 +1,9 @@
 import React from "react";
-import "./Carrusel.css";
-import slider1 from "../img/slider1.png"
+import "./carousel.css";
+import slider1 from "../../img/slider1.png"
 
 
-const Nosotros = () => {
+const Carousel = () => {
 
   return (
     <div className="container-carrusel">
@@ -17,4 +17,4 @@ const Nosotros = () => {
   );
 };
 
-export default Nosotros;
+export default Carousel;

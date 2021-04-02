@@ -72,7 +72,6 @@ const authReducer = (state = initialState, action) => {
       return executeLoginSuccess(state, action.userInfo);
     case actionTypes.LOGIN_FAIL:
       return executeLoginFail(state, action.error);
-
     case actionTypes.LOGOUT:
       return logout(state);
 

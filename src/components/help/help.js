@@ -1,8 +1,8 @@
 import React from "react";
-import ayudarte from "../img/ayudarte.png";
-import "./Ayuda.css";
+import ayudarte from "../../img/ayudarte.png";
+import "./help.css";
 
-const PodemosAyudarte = () => {
+const Help = () => {
   return (
     <div
       className="podemosAyudarteContainer"
@@ -47,4 +47,4 @@ const PodemosAyudarte = () => {
   );
 };
 
-export default PodemosAyudarte;
+export default Help;

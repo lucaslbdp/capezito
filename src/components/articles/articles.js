@@ -1,8 +1,8 @@
 import React from 'react';
-import chatbot from "../img/chatbot.png";
-import branding from "../img/branding.png";
-import web from "../img/web.png";
-import "./Articles.css";
+import chatbot from "../../img/chatbot.png";
+import branding from "../../img/branding.png";
+import web from "../../img/web.png";
+import "./articles.css";
 import { MDBAnimation } from "mdbreact";
 
 const Articles = () => {
