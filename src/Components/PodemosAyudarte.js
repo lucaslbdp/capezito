@@ -1,6 +1,6 @@
 import React from "react";
 import ayudarte from "../img/ayudarte.png";
-import "./Ayuda.css";
+import "./ayuda.css";
 
 const PodemosAyudarte = () => {
   return (

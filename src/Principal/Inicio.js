@@ -1,23 +1,23 @@
 import React from "react";
-import Carrusel from "../Otros/Carrusel";
-import Jumbo from "../Otros/Jumbo";
+import Carousel from "../otros/carousel";
+import Jumbo from "../otros/jumbo";
 import ".././App.css";
-import Multimedia from "../Otros/Multimedia";
-import Articles from "../Components/Articles";
-import Contacto from "../Otros/Contacto";
-import PodemosAyudarte from "../Components/PodemosAyudarte";
-import Clientes from "../Otros/Clientes"
+import Multimedia from "../otros/multimedia";
+import Articles from "../components/articles";
+import Contacto from "../otros/contact";
+import PodemosAyudarte from "../components/podemosAyudarte";
+import Clients from "../otros/clients"
 
 const Inicio = () => {
   return (
     <div>
-      <Carrusel />
+      <Carousel />
       <PodemosAyudarte />
       <Jumbo />
       <Articles />
       <Multimedia />
       <Contacto />
-      <Clientes />
+      <Clients />
     </div>
   );
 };

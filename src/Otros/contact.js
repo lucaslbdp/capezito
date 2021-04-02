@@ -7,7 +7,7 @@ import {
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
 import imgBody from "../img/imgBody.png";
-import "./Contacto.css";
+import "./contact.css";
 
 
 const Contacto = () => {
