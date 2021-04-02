@@ -19,7 +19,7 @@ const Jumbo = () => {
             <p style={{ color: "white" }} className="mb-4 jumbo-parrafo">
                 Somos una empresa tucumana que llega para brindar la mejor calidad{" "}
                 <br></br>en comunicación a través de un servicio automático y
-        personalizado a la vez,<br></br> dejando resultados reales y eficaces.
+                personalizado a la vez,<br></br> dejando resultados reales y eficaces.
       </p>
         </Jumbotron>
     );
