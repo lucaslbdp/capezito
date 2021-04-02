@@ -6,7 +6,6 @@ import facebookIcon from "../img/facebookIcon.png";
 import instagramIcon from "../img/instagramIcon.png";
 import whatsappIcon from "../img/whatsappIcon.png";
 import "../App.css";
-import { MDBView } from "mdbreact";
 
 const Footer = () => {
   return (
