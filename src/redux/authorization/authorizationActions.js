@@ -6,16 +6,14 @@ const executeLogin = (loginInfo) => {
     dispatch(executeLoginStart());
 
     login(
-      loginInfo,
-      (response) => {
+      loginInfo, (response) => {
         sessionStorage.setItem("token", response.data.token);
         const user = {
           ...response.data,
         };
         dispatch(executeLoginSuccess(user));
         return window.location.replace("/");
-      },
-      (error) => {
+      }, (error) => {
         dispatch(executeLoginFail());
       }
     );
