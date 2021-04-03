@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import {
-    MDBNavbar, MDBNavbarBrand, MDBView, MDBNavLink, MDBAnimation, MDBNavbarNav, MDBNavbarToggler, MDBCollapse,
+    MDBNavbar, MDBNavbarBrand, MDBView, MDBNavItem, MDBNavLink, MDBAnimation, MDBNavbarNav, MDBNavbarToggler, MDBCollapse,
 } from "mdbreact";
 import { BrowserRouter as Router } from 'react-router-dom';
 import "../../App.css";
@@ -33,7 +33,7 @@ class Header extends Component {
                                 </MDBAnimation>
                             </MDBNavLink>
                         </MDBNavbarBrand  >
-                        <MDBNavbarToggler className="header-no" image="https://mdbootstrap.com/img/svg/hamburger6.svg?color=2BBBAD " onClick={this.toggleCollapse('navbarCollapse1')}/>
+                        <MDBNavbarToggler className="header-no" image="https://mdbootstrap.com/img/svg/hamburger6.svg?color=2BBBAD " onClick={this.toggleCollapse('navbarCollapse1')} />
                         <MDBCollapse id="navbarCollapse1" isOpen={this.state.collapseID} navbar>
                             <MDBNavbarNav right>
 
@@ -44,20 +44,23 @@ class Header extends Component {
                                             href="https://www.instagram.com/capezcomunicacion/"
                                         >
                                             <MDBView hover zoom>
-                                            <img src={instagramIcon} alt="instag" className="icono-header"></img></MDBView></a></li>
+                                                <img src={instagramIcon} alt="instag" className="icono-header"></img></MDBView></a></li>
                                         <li>     <a
                                             target="_blank noreferrer"
                                             href="https://api.whatsapp.com/send?phone=+5493815516016"
                                         >
                                             <MDBView hover zoom>
-                                            <img src={whatsappIcon} alt="whats" className="icono-header"></img></MDBView></a></li>
+                                                <img src={whatsappIcon} alt="whats" className="icono-header"></img></MDBView></a></li>
                                         <li>      <a
                                             target="_blank noreferrer"
                                             href="https://www.facebook.com/capezcomunicacion"
                                         >
                                             <MDBView hover zoom>
-                                            <img src={facebookIcon} alt="fb" className="icono-header"></img></MDBView></a></li>
-                                    </ul>   </div>
+                                                <img src={facebookIcon} alt="fb" className="icono-header"></img></MDBView></a></li>
+                                    </ul>
+                                    <MDBNavItem>
+                                        <MDBNavLink to="/empresas">Empresas</MDBNavLink>
+                                    </MDBNavItem>   </div>
                             </MDBNavbarNav></MDBCollapse>
                     </div>
                 </MDBNavbar>
