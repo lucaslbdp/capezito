@@ -1,0 +1,17 @@
+.icon-header {
+    max-width: 40px;
+
+}
+
+.icon {
+    display: inline-block;
+    margin-top: 6px;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+@media(max-width: 305px){
+    .icon-header{
+      max-width: 30px;
+    }
+  }

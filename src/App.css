@@ -59,14 +59,6 @@ footer{
   margin-left: 12px;
 }
 
-.icono-footer{
-  max-width: 40px;
-  margin-left: 50px;
-}
-.icono-header{
-  max-width: 40px;
-}
-
 .header-div{
   display: flex;
 }
@@ -74,16 +66,8 @@ footer{
 .redes-container ul li {
   display: inline-block;
   margin: 0 4px;
-  width: 40px;
   height: 40px;
   text-align: center;
-}
-
-.redes-container ul li a {
-  display: inline-block;
-  margin-top: 6px;
-  line-height: 40px;
-  font-size: 18px;
 }
 
 .margen-header{
@@ -96,9 +80,6 @@ footer{
 @media(max-width: 305px){
   .parrafo-seguinos{
     font-size: 14px;
-  }
-  .icono-footer{
-    max-width: 30px;
   }
   .seguinos-footer{
     margin-left: 20px;

@@ -1,24 +1,27 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Inicio from "./containers/principal/inicio";
+import Login from "./containers/login/";
 import Header from "./components/common/header";
 import Footer from "./components/common/footer";
 import "./App.css";
 import "./bootstrap.min.css";
-
+import  store  from "./redux/store/store.js"
 
 function App() {
-  return (
-    <div>
-      <Header />
-      <Switch>
-        <Route exact path="/">
-          <Inicio />
-        </Route>
-      </Switch>
-      <Footer />
-    </div>
-  );
+    console.log(store.getState());
+    return (
+       
+
+        <div>
+            <Header />
+            <Switch>
+                <Route exact path="/" component={Inicio} />
+                <Route path="/login" component={Login} />
+            </Switch>
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
