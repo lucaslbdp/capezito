@@ -1,27 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { MDBJumbotron } from "mdbreact";
 import "./clients.css"
 
 const Clientes = () => {
-    document.addEventListener('DOMContentLoaded', () => {
+
+    useEffect(() => {
+
         const contadores = document.querySelectorAll('.contador_cantidad')
         const velocidad = 10000
 
         const animarContadores = () => {
             for (const contador of contadores) {
                 const actualizar_contador = () => {
-                    let cantidad_maxima = +contador.dataset.cantidadTotal,
-                        valor_actual = +contador.innerText,
-                        incremento = cantidad_maxima / velocidad
+                    let cantidad_maxima = +contador.dataset.cantidadTotal;
+                    let valor_actual = +contador.innerText;
+                    let incremento = cantidad_maxima / velocidad;
 
                     if (valor_actual < cantidad_maxima) {
                         contador.innerText = Math.ceil(valor_actual + incremento)
-                        setTimeout(actualizar_contador,100)
+                        setTimeout(actualizar_contador,100);
                     } else {
-                        contador.innerText = cantidad_maxima
+                        contador.innerText = cantidad_maxima;
                     }
                 }
-                actualizar_contador()
+                actualizar_contador();
             }
 
         }
@@ -45,7 +47,7 @@ const Clientes = () => {
             observer.observe(elementoHTML)
         })
 
-    })
+    });
 
     return (
         

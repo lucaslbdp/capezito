@@ -6,10 +6,10 @@ const executeService = (data, endpoint, method) => {
     const auhtStr = '';
     const request = {
         method,
-        url,
+        url: `${URL_API}${endpoint}`,
         headers: {
             "Content-Type": "application/json",
-            Authorization: authStr,
+            Authorization: auhtStr,
         },
     };
     
