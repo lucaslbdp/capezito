@@ -26,3 +26,4 @@ const executeService = (data, endpoint, method) => {
     });
 }
 
+export default executeService;
