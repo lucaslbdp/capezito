@@ -6,13 +6,9 @@ import Header from "./components/common/header";
 import Footer from "./components/common/footer";
 import "./App.css";
 import "./bootstrap.min.css";
-import  store  from "./redux/store/store.js"
 
 function App() {
-    console.log(store.getState());
     return (
-       
-
         <div>
             <Header />
             <Switch>
