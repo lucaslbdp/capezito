@@ -2,7 +2,7 @@ import axios from 'axios'
 
 const URL_API = 'https://localhost:5001/api';
 
-const executeService = (data, endpoint, method) => {
+const executeService = ( endpoint, method ,data ) => {
     const auhtStr = '';
     const request = {
         method,
@@ -21,6 +21,7 @@ const executeService = (data, endpoint, method) => {
         request.params = data;
     }
 
+    debugger;
     return axios(request).then((response) => {
         return response;
     });

@@ -1,9 +1,9 @@
-import * as actionTypes from "./authConstants";
-import { checkToken, login } from "../../services/user/userServices";
+import * as actionTypes from "./authorizationConstants";
+import { checkToken, login } from "../../services/authorization/authorizationServices";
 
 const executeLogin = (loginInfo) => {
     return (dispatch) => {
-
+        
         dispatch(executeLoginStart());
 
         login(loginInfo, (response) => {

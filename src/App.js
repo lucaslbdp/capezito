@@ -4,9 +4,9 @@ import Inicio from "./containers/principal/inicio";
 import Login from "./containers/login/";
 import Header from "./components/common/header";
 import Footer from "./components/common/footer";
-import "./App.css";
-import "./bootstrap.min.css";
 
+import "./bootstrap.min.css";
+import "./App.css";
 function App() {
     return (
         <div>
