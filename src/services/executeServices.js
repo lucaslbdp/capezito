@@ -13,15 +13,14 @@ const executeService = ( endpoint, method ,data ) => {
         },
     };
     
-    if (data && method === "POST") {
+    if (data && method === "POST" || method === "DELETE" || method === "PUT") {
         request.data = data;
     }
 
     if (data && method === "GET") {
         request.params = data;
     }
-
-    debugger;
+       
     return axios(request).then((response) => {
         return response;
     });

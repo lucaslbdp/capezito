@@ -3,7 +3,7 @@ import { checkToken, login } from "../../services/authorization/authorizationSer
 
 const executeLogin = (loginInfo) => {
     return (dispatch) => {
-        
+        debugger;
         dispatch(executeLoginStart());
 
         login(loginInfo, (response) => {
@@ -18,8 +18,8 @@ const executeLogin = (loginInfo) => {
             return window.location.replace("/");
 
         }, (error) => {
-
-            dispatch(executeLoginFail(error));
+            debugger
+            dispatch(executeLoginFail(error.response?.data ?? error.message));
 
         });
     };

@@ -8,7 +8,9 @@ import Footer from "./components/common/footer";
 import "./bootstrap.min.css";
 import "./App.css";
 function App() {
+    debugger
     return (
+        
         <div>
             <Header />
             <Switch>

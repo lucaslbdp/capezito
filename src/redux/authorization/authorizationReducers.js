@@ -3,22 +3,20 @@ import * as actionTypes from "./authorizationConstants";
 
 const initialState = {
   userInfo: {
-    userName: "",
-    token: "",
     email: "",
+    token: "", 
     roles: [],
     loading: false,
     error: null,
   },
 };
 
-//#region login
+
 const executeLoginStart = (state) => {
   return updateObject(state, {
     userInfo: updateObject(state.userInfo, {
-      userName: "",
-      token: "",
       email: "",
+      token: "",
       roles: [],
       loading: true,
       error: null,
@@ -29,10 +27,9 @@ const executeLoginStart = (state) => {
 const executeLoginSuccess = (state, userInfo) => {
   return updateObject(state, {
     userInfo: updateObject(state.userInfo, {
-      userName: userInfo.userName,
-      token: userInfo.token,
       email: userInfo.email,
-      roles: userInfo.roles,
+      token: userInfo.token,
+      roles: userInfo?.roles ?? [],
       loading: false,
       error: null,
     }),
@@ -47,22 +44,18 @@ const executeLoginFail = (state, error) => {
     }),
   });
 };
-//#endregion
 
-//#region logout
 const logout = (state) => {
   return updateObject(state, {
     userInfo: updateObject(state.userInfo, {
-      userName: "",
-      token: "",
       email: "",
+      token: "",
       roles: [],
       loading: false,
       error: null,
     }),
   });
 };
-//#endregion
 
 const authReducer = (state = initialState, action) => {
   switch (action.type) {
