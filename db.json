@@ -1,32 +1,39 @@
 {
-  "company":[
-      {
-          "businessName": "Coca-Cola",
-          "email": "cocalamejor@hotmail.com",
-          "taxId": "30-2658574-8",
-          "phoneNumber": 3816851705,
-          "category": "distribuidora"
-      },
-      {
-          "businessName": "Pepsi",
-          "email": "pepsilamejor@hotmail.com",
-          "taxId": "30-2555464-8",
-          "phoneNumber": 3816851705,
-          "category": "ventas"
-      },
-      {
-          "businessName": "Mirinda",
-          "email": "mirindalamejor@hotmail.com",
-          "taxId": "30-1658574-8",
-          "phoneNumber": 3816851705,
-          "category": "negocio"
-      },
-      {
-          "businessName": "Fanta",
-          "email": "fantalamejor@hotmail.com",
-          "taxId": "30-2158574-8",
-          "phoneNumber": 3816851705,
-          "category": "atencion al publico"
-      }
+  "company": [
+    {
+      "businessName": "emi",
+      "email": "emielmejor@hotmail.com",
+      "taxId": "2035353538",
+      "phoneNumber": "3816851704",
+      "id": 6
+    },
+    {
+      "businessName": "paisanitos",
+      "email": "paisanitoselmejor@hotmail.com",
+      "taxId": "2035355638",
+      "phoneNumber": "3816851704",
+      "id": 7
+    },
+    {
+      "businessName": "paisanitos",
+      "email": "paisanitoselmejor@hotmail.com",
+      "taxId": "2035355638",
+      "phoneNumber": "3816851704",
+      "id": 8
+    },
+    {
+      "businessName": "el faraon del pollo",
+      "email": "elfaraondelpollo@gmail.com",
+      "taxId": "205454848",
+      "phoneNumber": "3816578548",
+      "id": 9
+    },
+    {
+      "businessName": "beach",
+      "email": "beachbebidas@gmail.com",
+      "taxId": "5145456645",
+      "phoneNumber": "4984121321",
+      "id": 10
+    }
   ]
 }

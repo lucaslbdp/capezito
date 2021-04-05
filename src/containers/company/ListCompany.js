@@ -1,15 +1,18 @@
 import React from 'react';
-import { ListGroup } from 'react-bootstrap';
+import ListGroup from "react-bootstrap/ListGroup";
+import LineCompany from './lineCompany';
 
-const ListCompany = () => {
+const ListCompany = (props) => {
   return (
-    <section className="container my-4">
-        <h1 className="text-center my-4">
-            Lista de Empresas
+    <section className="container my-5">
+      <h1 className="text-center my-5" style={{textTransform:"initial"}}>
+        Lista de Empresas
         </h1>
-    <ListGroup>
-        
-    </ListGroup>
+      <ListGroup>
+      {
+        props.bussinesAPI.map((bussines)=> <LineCompany key={bussines.id} bussines={bussines} setRecharge={props.setRecharge}></LineCompany>)
+      }
+      </ListGroup>
     </section>
   );
 }
